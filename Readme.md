@@ -7,14 +7,14 @@
 Add to the composer of your project
 
 ```console
-composer require PontoSistemas/laravel-form-ajax-validation-ponto
+composer require ponto-sistemas/laravel-form-ajax-validation-ponto
 ```
 
 Or edit your composer.json
 
 ```json
 "require": {
-    "PontoSistemas/laravel-form-ajax-validation-ponto": "dev-master"
+    "ponto-sistemas/laravel-form-ajax-validation-ponto": "dev-master"
 },
 ```
 
