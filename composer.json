@@ -1,5 +1,5 @@
 {
-    "name": "PontoSistemas/laravel-form-ajax-validation-ponto",
+    "name": "ponto-sistemas/laravel-form-ajax-validation-ponto",
     "type": "library",
     "description": "Make ajax validation with Laravel Requests for forms with bootstrap",
     "keywords": ["laravel","form","ajax","validation"],
