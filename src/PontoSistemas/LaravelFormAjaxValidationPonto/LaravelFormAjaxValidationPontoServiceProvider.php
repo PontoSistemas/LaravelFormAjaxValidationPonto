@@ -43,7 +43,7 @@ class LaravelFormAjaxValidationPontoServiceProvider extends ServiceProvider {
             }
         });
         $this->publishes([
-            __DIR__.'/views' => base_path('resources/views/vendor/PontoSistemas'),
+            __DIR__.'/views' => base_path('resources/views/vendor/lfavp'),
         ]);
 	}
 

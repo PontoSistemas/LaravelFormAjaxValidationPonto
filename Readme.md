@@ -113,7 +113,7 @@ Add the jQuery and include the view that have the ajax script
 
 ```javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-@include('vendor.PontoSistemas.ajax_script', ['form' => '#myform','request'=>'App/Http/Requests/TestRequest','on_start'=>true])
+@include('vendor.lfavp.ajax_script', ['form' => '#myform','request'=>'App/Http/Requests/TestRequest','on_start'=>true])
 ```
 
 You need jQuery 1.11.2 or higher
