@@ -25,10 +25,20 @@ class LaravelFormAjaxValidationPontoServiceProvider extends ServiceProvider {
             $class = $request->class;
             $class = str_replace('/','\\',$class);
             $my_request = new $class();
-            $get	=	$request->get('Cliente');
+            $get	=	$request->all();
 			$get_request = [];
 			$ii = 0;
 			foreach($get as $key => $value){
+				if  (is_array($value)){
+					foreach ($value as $campos => $valores){
+						if  ($ii==0){
+							$get_request = array($campos => $valores);
+						} else {
+							$get_request = array_merge($get_request, array($campos => $valores));
+						}
+						$ii++;
+					}
+				}
 				if  ($ii==0){
 					$get_request = array($key => $value);
 				} else {
