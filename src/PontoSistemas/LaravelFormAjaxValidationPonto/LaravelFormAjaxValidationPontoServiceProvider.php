@@ -46,7 +46,6 @@ class LaravelFormAjaxValidationPontoServiceProvider extends ServiceProvider {
 				}
 				$ii++;
 			}
-			$get_request = array_merge($get_request, $request->except('Cliente'));
             $validator = Validator::make($get_request,$my_request->rules(),$my_request->messages());
             $validator->setAttributeNames($my_request->attributes());
             if($request->ajax()){
